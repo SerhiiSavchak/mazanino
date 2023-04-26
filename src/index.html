@@ -1,14 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hakori</title>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+
+      <header class="page-header">
+        <div class="header-container container">
+          <nav class="header-nav">
+            <ul class="header-nav-list list">
+              <li class="header-nav-item">
+                <a href="" class="header-nav-link link">Haori</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="" class="header-nav-link link">Delivery</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="" class="header-nav-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <a class="header-logo" href=""
+            ><img
+              src="images/sprite/mazanino.png"
+              alt="mazanino-logo"
+              width="60"
+              height="70"
+          /></a> -->
+          <a class="header-logo" href=""
+            ><svg class="icon-logo">
+              <use href="./images/sprite/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header-contact-list list">
+            <li class="header-contact-item">
+              <a
+                class="header-contact-link link"
+                href="mailto:mazanino@gmail.com"
+                >mazanino@gmail.com</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a class="header-contact-link link" href="tel:380961303555"
+                >+38 (096) 130-35-55</a
+              >
+            </li>
+          </ul>
+
+      </header>
+    </div>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container container">
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <img
+                src="images/hero.jpg"
+                alt="hakori-example"
+                class="hero-image"
+                width="300"
+                height="400"
+              />
+            </li>
+            <li class="hero-item">
+              <img
+                src="images/hero-2.jpg"
+                alt="hakori-example-2"
+                class="hero-image"
+                width="400"
+                height="500"
+              />
+            </li>
+            <li class="hero-item">
+              <img
+                src="images/hero-3.jpg"
+                alt="hakori-example-3"
+                class="hero-image"
+                width="300"
+                height="400"
+              />
+            </li>
+          </ul>
+          <svg class="icon-text">
+            <use href="./images/sprite/icons.svg#icon-text"></use>
+          </svg>
+          <!-- <button class="hero-btn">Заказать</button> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>

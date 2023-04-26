@@ -1,0 +1,143 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Header */
+
+.page-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-list {
+  font-weight: 600;
+  display: flex;
+  gap: 40px;
+}
+
+.header-contact-list {
+  font-weight: 500;
+  display: flex;
+  gap: 20px;
+}
+
+.icon-logo {
+  top: -60px;
+  left: 465px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+/* Hero */
+
+.hero-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f2f3f4;
+}
+
+.hero-list {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.hero-image {
+  border-radius: 50%;
+}
+
+.hero-top-text {
+  bottom: -30px;
+  left: 415px;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 170px;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background-color: transparent;
+
+  position: absolute;
+  bottom: 50px;
+  left: 910px;
+}
+
+.icon-text {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  height: 900px;
+  width: 1700px;
+}
