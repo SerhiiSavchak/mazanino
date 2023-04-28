@@ -194,18 +194,17 @@ button {
 
 .hero-btn {
   z-index: 997;
-  top: 550px;
+  top: 610px;
   left: 470px;
   position: absolute;
   text-transform: uppercase;
   font-family: 'Bruno Ace SC', cursive;
   color: white;
-  border-color: transparent;
+  border: none;
   border-radius: 5%;
   height: 70px;
   width: 230px;
   font-size: 28px;
-
   background-color: black;
   display: block;
   scale: 1;
@@ -219,8 +218,11 @@ button {
 }
 
 .hero-btn.second {
-  top: 690px;
-  left: 1270px;
+  top: 510px;
+  left: 1235px;
+  color: black;
+  border: none;
+  background-color: white;
 }
 
 .hero-btn:hover,
@@ -228,6 +230,13 @@ button {
   scale: 1.1;
   color: black;
   background-color: white;
+}
+
+.hero-btn.second:hover,
+.hero-btn.second:focus {
+  scale: 1.1;
+  color: white;
+  background-color: black;
 }
 
 /* About section */
