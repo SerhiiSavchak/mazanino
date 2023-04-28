@@ -95,7 +95,7 @@ button {
 .header-nav-list {
   font-weight: 600;
   display: flex;
-  gap: 40px;
+  gap: 90px;
 }
 
 .header-contact-list {
@@ -183,7 +183,7 @@ button {
 .icon-text {
   white-space: nowrap;
   position: absolute;
-  top: -750px;
+  top: -765px;
   left: -268px;
   height: 2000px;
   width: 2500px;
@@ -233,7 +233,7 @@ button {
   position: relative;
   background-color: #f2f3f4;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -263,7 +263,11 @@ button {
 .about-list {
 }
 .about-item {
-  max-width: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
@@ -272,10 +276,7 @@ button {
   font-weight: 500;
 }
 
-.about-item:first-child {
-  margin-right: auto;
-}
-.about-item.second {
+.about-item:nth-child(2n) {
   margin-left: auto;
 }
 
@@ -283,23 +284,36 @@ button {
   margin-left: auto;
 }
 
-.about-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.about-text-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
 .about-icon {
-  transform: rotate(165deg);
+  width: 60px;
+  height: 60px;
 }
 
-.about-icon:nth-child(2n) {
-  transform: rotate(-10deg);
+.about-icon.white {
+  fill: white;
+}
+
+.about-icon:last-child {
+  fill: white;
+}
+
+.about-section-icon {
+  top: -40px;
+  left: -355px;
+  position: absolute;
+  fill: white;
+  width: 700px;
+  height: 1200px;
+}
+
+.about-section-icon.second {
+  top: -100px;
+  left: 1560px;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  transform: rotate(-370deg);
+  fill: black;
 }
 
 /* Haori section  */
@@ -372,23 +386,13 @@ button {
   transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hakori-thumb:hover,
-.hakori-thumb:focus {
-  background-color: white;
-  border: 0.5px solid black;
-}
-
 .haori-text {
   font-size: 18px;
   font-family: 'Bruno Ace SC', cursive;
   color: white;
   text-align: center;
+  cursor: default;
   transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hakori-thumb:hover .haori-text,
-.hakori-thumb:focus .haori-text {
-  color: black;
 }
 
 .haori-btn {
@@ -404,7 +408,9 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   scale: 1;
   padding: 5px 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -413,10 +419,31 @@ button {
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.haori-btn:hover {
+.haori-btn:hover,
+.haori-btn:focus {
   scale: 1.1;
   color: white;
   background-color: black;
+}
+
+.haori-btn-icon {
+  scale: 1;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.haori-btn:hover .haori-btn-icon,
+.haori-btn:focus .haori-btn-icon {
+  fill: white;
+  scale: 1.1;
+}
+
+.haori-btn-icon:hover,
+.haori-btn-icon:focus {
+  fill: white;
 }
 
 .haori-icon {
@@ -435,6 +462,7 @@ button {
   background-color: black;
   padding-top: 100px;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .delivery-title-wrap {
@@ -473,15 +501,19 @@ button {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 .delivery-top-item {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .delivery-rules-text {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
   max-width: 900px;
   text-align: center;
   text-transform: uppercase;
@@ -490,6 +522,12 @@ button {
   font-size: 20px;
   color: white;
   font-family: 'Bruno Ace SC', cursive;
+}
+
+.delivery-text-icon {
+  fill: white;
+  width: 60px;
+  height: 60px;
 }
 
 .delivery-bottom-list {
@@ -501,9 +539,16 @@ button {
   flex-wrap: wrap;
 }
 .delivery-bottom-item {
+  scale: 1.05;
   text-align: center;
   border: 1px solid white;
   width: 500px;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.delivery-bottom-item:hover,
+.delivery-bottom-item:focus {
+  scale: 1;
 }
 
 .delivery-bottom-item:last-child {
@@ -545,11 +590,20 @@ button {
   color: white;
 }
 
+.delivery-section-icon {
+  fill: white;
+  width: 900px;
+  height: 1500px;
+  bottom: -500px;
+  right: -450px;
+  position: absolute;
+}
+
 /* Footer */
 
 .page-footer {
   overflow: hidden;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .footer-container {
