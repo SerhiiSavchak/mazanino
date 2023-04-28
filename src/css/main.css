@@ -160,6 +160,7 @@ button {
   background-color: white;
   position: relative;
   padding-top: 300px;
+  overflow: hidden;
   padding-bottom: 100px;
 }
 
@@ -183,8 +184,10 @@ button {
 .icon-text {
   white-space: nowrap;
   position: absolute;
+
   top: -765px;
   left: -268px;
+  right: auto;
   height: 2000px;
   width: 2500px;
 }
@@ -230,6 +233,7 @@ button {
 /* About section */
 
 .about-section {
+  overflow: hidden;
   position: relative;
   background-color: #f2f3f4;
   padding-top: 70px;
@@ -335,14 +339,13 @@ button {
 /* Haori section  */
 
 .haori-section {
-  overflow: hidden;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .haori-container {
-  max-width: 1440px;
 }
 
 .haori-title-wrap {
@@ -478,8 +481,11 @@ button {
   background-color: black;
   padding-top: 100px;
   padding-bottom: 100px;
-  position: relative;
   overflow: hidden;
+  position: relative;
+}
+
+.delivery-container {
 }
 
 .delivery-title-wrap {
@@ -551,7 +557,7 @@ button {
   letter-spacing: 0.05em;
   font-size: 18px;
   display: flex;
-  gap: 90px 110px;
+  gap: 40px 110px;
   flex-wrap: wrap;
 
   text-transform: uppercase;
@@ -636,8 +642,9 @@ button {
 /* Footer */
 
 .page-footer {
-  overflow: hidden;
+  width: 100%;
   padding: 40px 0;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -645,6 +652,7 @@ button {
   position: relative;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 
