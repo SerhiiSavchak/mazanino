@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Quicksand:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@400;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
 
     <!-- normalize -->
     <link
@@ -25,28 +23,21 @@
   </head>
   <body>
 
-      <header class="page-header">
+      <header class="page-header header-js">
         <div class="header-container container">
           <nav class="header-nav">
             <ul class="header-nav-list list">
               <li class="header-nav-item">
-                <a href="" class="header-nav-link link">Haori</a>
+                <a href="#haori" class="header-nav-link link">Haori</a>
               </li>
               <li class="header-nav-item">
-                <a href="" class="header-nav-link link">Delivery</a>
+                <a href="#delivery" class="header-nav-link link">Delivery</a>
               </li>
               <li class="header-nav-item">
-                <a href="" class="header-nav-link link">Contacts</a>
+                <a href="#footer" class="header-nav-link link">Contacts</a>
               </li>
             </ul>
           </nav>
-          <!-- <a class="header-logo" href=""
-            ><img
-              src="images/sprite/mazanino.png"
-              alt="mazanino-logo"
-              width="60"
-              height="70"
-          /></a> -->
           <a class="header-logo" href=""
             ><svg class="icon-logo">
               <use href="./images/sprite/icons.svg#icon-logo"></use>
@@ -57,7 +48,7 @@
               <a
                 class="header-contact-link link"
                 href="mailto:mazanino@gmail.com"
-                >mazanino@gmail.com</a
+                >mazanino<span>@</span>gmail.com</a
               >
             </li>
             <li class="header-contact-item">
@@ -72,44 +63,181 @@
     <main>
       <section class="hero-section">
         <div class="hero-container container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <img
-                src="images/hero.jpg"
-                alt="hakori-example"
-                class="hero-image"
-                width="300"
-                height="400"
-              />
-            </li>
-            <li class="hero-item">
-              <img
-                src="images/hero-2.jpg"
+          <h1 class="visually-hidden">Haori</h1>
+          <img
+                src="./images/hero-2.png"
                 alt="hakori-example-2"
-                class="hero-image"
-                width="400"
-                height="500"
+              
+                class="hero-img"
+               
               />
-            </li>
-            <li class="hero-item">
-              <img
-                src="images/hero-3.jpg"
-                alt="hakori-example-3"
-                class="hero-image"
-                width="300"
-                height="400"
-              />
-            </li>
-          </ul>
-          <svg class="icon-text">
+              <button type="button" class="hero-btn">buy</button>
+              <button type="button" class="hero-btn second">now</button>
+          <svg class="icon-text animate__animated animate__backInUp">
             <use href="./images/sprite/icons.svg#icon-text"></use>
           </svg>
-          <!-- <button class="hero-btn">Заказать</button> -->
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="container">
+           <div class="about-title-wrap">
+            <svg class="about-title-icon">
+              <use href="./images/sprite/icons.svg#icon-lotos-1"></use>
+             </svg><h2 class="about-title">About us</h2>
+            <svg class="about-title-icon">
+              <use href="./images/sprite/icons.svg#icon-lotos-1"></use>
+             </svg>
+            </div>
+           <ul class="about-list list">
+           <li class="about-item"><div class="about-text-wrap"><p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sit tempore est repudiandae harum vero.</p>
+            <svg class="about-icon">
+              <use href="./images/sprite/icons.svg#icon-sakura-stick"></use>
+             </svg>
+            </div>
+          </li>
+           <li class="about-item second"><div class="about-text-wrap">
+            <svg class="about-icon second">
+              <use href="./images/sprite/icons.svg#icon-sakura-stick"></use>
+             </svg><p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi sequi iusto esse commodi ullam!</p>
+            
+            </div>
+          </li>
+           <li class="about-item"><div class="about-text-wrap"><p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est labore perspiciatis sequi cumque ut mollitia.</p><svg class="about-icon third">
+              <use href="./images/sprite/icons.svg#icon-sakura-stick"></use>
+             </svg></div></li>
+           
+           <li class="about-item"><div class="about-text-wrap"><svg class="about-icon third">
+            <use href="./images/sprite/icons.svg#icon-sakura-stick"></use>
+           </svg><p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero mollitia ad doloribus vel nam sit odit quisquam, quo dolor possimus?</p></div></li>
+          </ul>
+        </div>
+       </section>
+       <section class="haori-section" id="haori">
+        <div class="haori-container container">
+           <div class="haori-title-wrap"><svg class="haori-title-icon">
+            <use href="./images/sprite/icons.svg#icon-kimono"></use>
+           </svg>
+           <h2 class="haori-title">Our Haori</h2>
+           <svg class="haori-title-icon">
+            <use href="./images/sprite/icons.svg#icon-kimono"></use>
+           </svg>
+          </div>
+           <ul class="haori-list list">
+             <li class="haori-item"><img src="./images/haori-1.jpg" alt="" class="haori-img"><div class="hakori-thumb"><p class="haori-text">1500 UAH</p></div></li>
+             <li class="haori-item"><img src="./images/haori-2.jpg" alt="" class="haori-img"><div class="hakori-thumb"><p class="haori-text">1500 UAH</p></div></li>
+             <li class="haori-item"><img src="./images/haori-3.jpg" alt="" class="haori-img"><div class="hakori-thumb"><p class="haori-text">1500 UAH</p></div></li>
+             <li class="haori-item"><img src="./images/haori-4.jpg" alt="" class="haori-img"><div class="hakori-thumb"><p class="haori-text">1500 UAH</p></div></li>
+           </ul>
+           <button class="haori-btn" type="button">Order</button>
+ <svg class="haori-icon">
+  <use href="./images/sprite/icons.svg#icon-samurai"></use>
+ </svg>       
+          </div>
+       </section>
+      <section class="delivery-section" id="delivery">
+        <div class="container">
+          <div class="delivery-title-wrap"><svg class="delivery-title-icon">
+            <use href="./images/sprite/icons.svg#icon-yin-yang"></use>
+          </svg>
+          <h2 class="delivery-title">Delivery and payment</h2>
+          <svg class="delivery-title-icon">
+            <use href="./images/sprite/icons.svg#icon-yin-yang"></use>
+          </svg></div>
+          <h3 class="delivery-suptitle">Delivery rules</h3>
+          <ul class="delivery-top-list">
+            <li class="delivery-top-item">
+              <p class="delivery-rules-text"><span class=" delivery-num first">1</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse illum! Repellendus ullam qui necessitatibus.</p>
+            </li>
+            <li class="delivery-top-item">
+              <p class="delivery-rules-text"><span class=" delivery-num">2</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nostrum nemo officia illum aspernatur quos quod recusandae, temporibus eos ipsa?</p>
+            </li>
+            <li class="delivery-top-item">
+              <p class="delivery-rules-text"><span class=" delivery-num">3</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At optio voluptas, nam perspiciatis ipsum fuga.</p>
+            </li>
+            <li class="delivery-top-item">
+              <p class="delivery-rules-text"><span class=" delivery-num">4</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum eum, odit facilis aliquid accusamus corporis dolorum labore, est, tempore atque consequatur ad amet dicta?</p>
+            </li>
+          </ul>
+        <ul class="delivery-bottom-list list">
+          <li class="delivery-bottom-item">
+            <div class="delivery-thumb-top">
+              <p class="delivery-top-text">Nova Poshta</p>
+            </div>
+            <svg class="delivery-icon">
+              <use href="./images/sprite/icons.svg#icon-novaposhta"></use>
+            </svg>
+            <div class="delivery-thumb-bottom">
+              <p class="delivery-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsum?</p>
+            </div>
+          </li>
+          <li class="delivery-bottom-item">
+            <div class="delivery-thumb-top">
+              <p class="delivery-top-text">Ukr poshta</p>
+            </div>
+            <svg class="delivery-icon">
+              <use href="./images/sprite/icons.svg#icon-ukrposhta"></use>
+            </svg>
+            <div class="delivery-thumb-bottom">
+              <p class="delivery-bottom-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, nobis.</p>
+            </div>
+          </li>
+          <li class="delivery-bottom-item">
+            <div class="delivery-thumb-top">
+              <p class="delivery-top-text">Pick-up</p>
+            </div>
+            <svg class="delivery-icon pickup">
+              <use href="./images/sprite/icons.svg#icon-pickup"></use>
+            </svg>
+            <div class="delivery-thumb-bottom">
+              <p class="delivery-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, beatae.</p>
+            </div>
+          
+          </li>
+        </ul>
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="page-footer" id="footer">
+      <div class="footer-container container">
+        
+        <ul class="footer-social-list list">
+          <li class="footer-social-item">
+            <a href="" class="footer-social-link link">
+              <svg class="footer-social-icon">
+                <use href="./images/sprite/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-link link">
+              <svg class="footer-social-icon">
+                <use href="./images/sprite/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-link link">
+              <svg class="footer-social-icon">
+                <use href="./images/sprite/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+       
+       
+            <a class="footer-logo-link" href=""
+              ><svg class="icon-footer-logo">
+                <use href="./images/sprite/icons.svg#icon-text"></use>
+              </svg>
+            </a>
+  
+    
+        <form class="footer-form" action="">
+          <input class="footer-input" type="text" placeholder="enter your number">
+           <button class="footer-btn" type="submit">Order</button>
+        </form>
+      </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
