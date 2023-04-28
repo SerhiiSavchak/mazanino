@@ -497,33 +497,22 @@ button {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 80px;
 }
 .delivery-top-item {
+  width: 400px;
   position: relative;
 }
 
 .delivery-rules-text {
+  max-width: 900px;
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.15;
   letter-spacing: 0.03em;
   font-size: 20px;
   color: white;
   font-family: 'Bruno Ace SC', cursive;
-}
-
-.delivery-num {
-  font-size: 28px;
-  top: 4px;
-  left: -55px;
-  border-radius: 50%;
-  position: absolute;
-  padding: 10px;
-  color: black;
-  background-color: white;
-}
-.delivery-num.first {
-  padding: 10px 15px;
 }
 
 .delivery-bottom-list {
