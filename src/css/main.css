@@ -364,13 +364,6 @@ button {
   }
 }
 
-/* @keyframes rotateFlower {
-  0% {
-  }
-  100% {
-  }
-} */
-
 /* Haori section  */
 
 .haori-section {
@@ -535,6 +528,8 @@ button {
   width: 50px;
   height: 50px;
   fill: white;
+  animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+  transform-origin: center center;
 }
 
 .delivery-title {
